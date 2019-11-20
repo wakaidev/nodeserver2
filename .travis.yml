@@ -4,7 +4,5 @@ addons:
   chrome: stable # make Chrome available
 before_install:
   - npm install -g @lhci/cli@0.3.x # install LHCI
-script:
-  - npm run build # build your site
 after_success:
   - lhci autorun --upload.target=temporary-public-storage 
